@@ -26,4 +26,11 @@ chsh -s $(which zsh)
 rm -rf $HOME/.mackup.cfg
 ln -s $HOME/dotfiles/Mackup/.mackup.cfg $HOME/.mackup.cfg
 
+# Restore mackup 
 mackup restore
+
+# ruby
+# https://github.com/rbenv/rbenv/issues/938
+rbenv install 2.6.3
+rbenv global 2.6.3
+gem install bundler

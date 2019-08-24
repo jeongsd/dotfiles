@@ -6,7 +6,6 @@ tap 'homebrew/bundle'
 tap 'homebrew/dupes'
 tap 'prisma/prisma'
 # https://github.com/tmuxinator/tmuxinator/issues/563
-tap 'nexeck/homebrew-tmuxinator'
 
 # Make sure apps get installed in system Applications dir
 cask_args appdir: '/Applications'
@@ -35,6 +34,7 @@ brew 'homebrew/dupes/grep'
 
 # Install Binaries
 brew 'git'
+brew 'ruby-install'
 # https://hub.github.com/
 brew 'hub'
 brew 'tree'
@@ -42,7 +42,6 @@ brew 'mackup'
 brew 'trash'
 brew 'wget'
 brew 'tmux'
-brew 'nexeck/homebrew-tmuxinator/tmuxinator'
 brew 'autojump'
 brew 'htop'
 brew 'imagemagick'

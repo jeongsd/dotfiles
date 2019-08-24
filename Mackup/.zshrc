@@ -59,3 +59,9 @@ load-nvmrc
 
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+# https://github.com/rbenv/rbenv/issues/938
+eval "$(rbenv init -)"
+
+# https://github.com/tmuxinator/tmuxinator#completion
+source ~/.bin/tmuxinator.zsh
