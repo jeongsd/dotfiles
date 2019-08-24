@@ -34,7 +34,10 @@ brew 'homebrew/dupes/grep'
 
 # Install Binaries
 brew 'git'
-brew 'ruby-install'
+# https://stackoverflow.com/questions/16950130/osx-bundler-install-command-not-found
+brew 'rbenv'
+brew 'ruby-build'
+
 # https://hub.github.com/
 brew 'hub'
 brew 'tree'
