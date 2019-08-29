@@ -17,11 +17,7 @@ plugins=(
   rake
   rbenv
   ruby
-  zsh-completions
-  zsh-autosuggestions
-  zsh-syntax-highlighting
   autojump
-  zsh-nvm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -29,6 +25,10 @@ source $ZSH/oh-my-zsh.sh
 autoload -U compinit && compinit
 
 antibody bundle denysdovhan/spaceship-prompt
+antibody bundle zsh-users/zsh-completions
+antibody bundle zsh-users/zsh-autosuggestions
+antibody bundle zsh-users/zsh-syntax-highlighting
+antibody bundle lukechilds/zsh-nvm
 
 # https://github.com/tmuxinator/tmuxinator
 export EDITOR='code'
