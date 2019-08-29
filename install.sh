@@ -34,3 +34,7 @@ mackup restore
 rbenv install 2.6.3
 rbenv global 2.6.3
 gem install bundler
+bundle install
+
+mkdir ~/.bin
+cp $(bundle show tmuxinator)/completion/tmuxinator.zsh ~/.bin/tmuxinator.zsh 
