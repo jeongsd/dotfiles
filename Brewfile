@@ -1,11 +1,5 @@
- # Taps
-tap 'caskroom/cask'
-tap 'caskroom/fonts'
-tap 'caskroom/versions'
-tap 'homebrew/bundle'
-tap 'homebrew/dupes'
-tap 'prisma/prisma'
 # https://github.com/tmuxinator/tmuxinator/issues/563
+tap "homebrew/cask-fonts"
 
 # Make sure apps get installed in system Applications dir
 cask_args appdir: '/Applications'
@@ -13,24 +7,15 @@ cask_args appdir: '/Applications'
 # Install ZSH
 brew 'zsh'
 brew 'getantibody/tap/antibody'
-# brew 'antigen'
-# brew 'zsh-completions'
-# brew 'zsh-autosuggestions'
-# brew 'zsh-syntax-highlighting'
-# brew 'salmanulfarzy/spaceship-prompt/spaceship-prompt'
-
 
 # Install GNU core utilities (those that come with OS X are outdated)
-brew 'coreutils'
+brew 'coreutls'
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew 'findutils'
 
 # Install Bash 4
 brew 'bash'
-
-# Install more recent versions of some OS X tools
-brew 'homebrew/dupes/grep'
 
 # Install Binaries
 brew 'git'
@@ -39,7 +24,16 @@ brew 'rbenv'
 brew 'ruby-build'
 
 # https://hub.github.com/
+# intel
 brew 'hub'
+brew 'imagemagick'
+brew 'deno'
+brew 'mas' # https://github.com/mas-cli/mas
+brew 'fd' # https://github.com/sharkdp/fd
+brew 'starship'
+brew 'k6'
+
+# M1 abaiable
 brew 'tree'
 brew 'mackup'
 brew 'trash'
@@ -47,14 +41,9 @@ brew 'wget'
 brew 'tmux'
 brew 'autojump'
 brew 'htop'
-brew 'imagemagick'
-brew 'mas' # https://github.com/mas-cli/mas
-brew 'fd' # https://github.com/sharkdp/fd
-brew 'prisma'
 brew 'postgresql'
-cask 'now'
-cask 'google-cloud-sdk'
-
+brew 'pyenv'
+brew 'tmuxinator'
 
 # node.js
 brew 'yarn'
@@ -63,28 +52,21 @@ brew 'yarn'
 cask 'firefox'
 cask 'github'
 cask 'google-backup-and-sync'
-cask 'google-chrome'
 cask 'alfred'
-cask 'dropbox'
-cask 'evernote'
 cask 'firefox'
-cask 'goofy'
 cask 'google-drive-file-stream'
 cask 'iterm2'
-cask 'visual-studio-code'
 cask 'teamviewer'
 cask 'skype'
 cask 'slack'
 cask 'github'
-cask 'docker'
-cask 'graphql-playground'
 cask 'zeplin'
 cask 'opera'
 
 
 # Fonts
 cask 'font-fira-code'
-cask 'font-hack'
-cask 'font-lato'
-cask 'font-open-sans'
-cask 'font-roboto'
+# cask 'font-hack'
+# cask 'font-lato'
+# cask 'font-open-sans'
+# cask 'font-roboto'ㅒ

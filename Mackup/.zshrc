@@ -65,3 +65,5 @@ eval "$(rbenv init -)"
 
 # https://github.com/tmuxinator/tmuxinator#completion
 source ~/.bin/tmuxinator.zsh
+
+eval "$(starship init zsh)"
